@@ -282,9 +282,9 @@ class ParallelCoordinates(DataVisualizer):
 
             if label not in used_legends:
                 used_legends.add(label)
-                self.ax.plot(x, row, color=colors[label], alpha=0.25, label=label, **kwargs)
+                self.ax.plot(x, row, color=colors[label], alpha=0.1, label=label, **kwargs)
             else:
-                self.ax.plot(x, row, color=colors[label], alpha=0.25, **kwargs)
+                self.ax.plot(x, row, color=colors[label], alpha=0.1, **kwargs)
 
         # Add the vertical lines
         # TODO: Make an independent function for override!
